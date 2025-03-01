@@ -1,0 +1,140 @@
+
+.todo_list {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+.todo_list__container {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow-y: auto;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.error__msg {
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #ff5c5c;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #fcbdbd;
+}
+
+.todo_list__form {
+    width: 90%;
+    display: flex;
+    gap: 0.5rem;
+    margin: auto;
+    margin-top: 0.8em;
+}
+
+.todo_list__form input {
+    width: 90%;
+    height: 35px;
+    padding: 8px;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border: 1px solid #b6b6b6;
+    border-radius: 10px;
+}
+
+.btn__todo_list {
+    height: 35px;
+    width: 40px;
+    background: #0071eb;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn__todo_list:hover {
+    background: #00a0dfdc;
+}
+
+.list {
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.todo__item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.todo__item:hover {
+    background: #f8f8f8;
+}
+
+.todo__title {
+    display: flex;
+    gap: 0.8em;
+}
+
+.todo__title input {
+    width: 18px;
+    cursor: pointer;
+}
+
+.delete__icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ff5c5c;
+    transition: 0.3s;
+}
+
+.delete__icon:hover {
+    color: #d9534f;
+}
+
+.done__item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: line-through;
+    color: #888;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.done__item:hover {
+    background: #f8f8f8;
+}
+
+.done__title {
+    display: flex;
+    gap: 0.8em;
+}
+
+.done__title input {
+    width: 18px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
