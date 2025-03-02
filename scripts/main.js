@@ -2,14 +2,11 @@ import { appCalculator } from "../scripts/appCalculator/uiCalculator.js";
 import { appConverter } from "../scripts/appConverter/uiConverter.js";
 import { appTimer } from "../scripts/appTimer/uiTimer.js";
 import { appTodoList } from "../scripts/appTodoList/uiTodoList.js";
+import { updateTime } from "./Time/time.js";
 
 const screenApp = document.querySelector(".screen__app");
 const screenHome = document.querySelector(".screen__home");
 const btnHome = document.querySelector(".btn__home");
-
-//data e hora
-const currentHour = document.querySelector(".currentHour");
-const currentDate = document.querySelector(".currentDate");
 
 //ícones dos apps
 const converterApp = document.getElementById("converter__app");
@@ -22,36 +19,6 @@ const screenConverter = document.querySelector(".converter");
 const screenTodoList = document.querySelector(".todo_list");
 const screenTimer = document.querySelector(".timer");
 const screenCalculator = document.querySelector(".calculator");
-
-function updateTime() {
-  const now = new Date();
-  const months = [
-    "Janeiro",
-    "Fevereiro",
-    "Março",
-    "Abril",
-    "Maio",
-    "Junho",
-    "Julho",
-    "Agosto",
-    "Setembro",
-    "Outubro",
-    "Novembro",
-    "Dezembro",
-  ];
-
-  const days = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
-
-  currentHour.textContent = `${now.getHours()}:${now
-    .getMinutes()
-    .toString()
-    .padStart(2, "0")}`;
-
-  currentDate.textContent = `${days[now.getDay()]}, ${now
-    .getDate()
-    .toString()
-    .padStart(2, "0")} de ${months[now.getMonth()]}`;
-}
 
 updateTime();
 
