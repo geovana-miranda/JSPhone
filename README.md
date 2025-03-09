@@ -19,7 +19,7 @@ Este repositório reúne diversos projetos desenvolvidos para praticar JavaScrip
 Todos os aplicativos são gerados dinamicamente com JavaScript.
 
 ### 🛠️ Tecnologias Utilizadas
-  - **JavaScript Vanilla** (sem frameworks!).
-  - **HTML5 e CSS3** para estrutura e design responsivo.
+  - **JavaScript Vanilla**.
+  - **HTML5 e CSS3**.
   - **LocalStorage** para persistência de dados da lista de tarefas.
   - **AwesomeAPI** para conversão de moedas.
